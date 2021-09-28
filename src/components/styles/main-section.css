@@ -1,0 +1,142 @@
+.main-section {
+  min-height: calc(100vh - 7rem);
+  transition: background 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.main-section.dark {
+  background-color: #202c37;
+  color: #fafafa;
+}
+
+.main-section .container {
+  padding: 5rem 0;
+}
+
+.filters-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.filters-section form {
+  margin-bottom: 4.5rem;
+  height: 3.7rem;
+}
+
+.country-filter {
+  margin-right: 6rem;
+}
+
+.country-filter input,
+.region-filter select {
+  border: none;
+  border-radius: 0.5rem;
+  height: 100%;
+  box-shadow: 0.2rem 0.4rem 0.6rem -0.7rem rgba(0, 0, 0, 0.8);
+  font-size: 1.4rem;
+  font-family: inherit;
+  outline: none;
+  transition: background 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.country-filter input {
+  padding: 0 2.5rem;
+  width: 33rem;
+  font-weight: 500;
+}
+
+.country-filter input.dark,
+.region-filter select.dark {
+  background-color: #2b3945;
+  color: #fafafa;
+}
+
+.region-filter select {
+  padding: 0 1.1rem;
+}
+
+.cards-section-wrapper h2 {
+  margin-bottom: 2.5rem;
+}
+
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+  grid-gap: 5rem;
+}
+
+.card {
+  max-width: 36rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.6rem 0.7rem 1.3rem -1.1rem rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  cursor: pointer;
+  transition: background 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.card.dark {
+  background-color: #2b3945;
+  color: #fafafa;
+}
+
+.thumbnail-flag {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.card .country-details {
+  padding: 2.5rem 3rem 5rem 3rem;
+}
+
+.card .country-details h4 {
+  margin-bottom: 2.5rem;
+  font-size: 1.7rem;
+}
+
+.card .country-details p {
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.card .country-details span {
+  font-weight: 600;
+}
+
+.recent {
+  margin-bottom: 6rem;
+}
+
+.recent-informative {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.recent-informative h2 {
+  margin-right: 3rem;
+}
+
+.recent-btn {
+  padding: 0.6rem 2.5rem;
+  font-size: inherit;
+  font-weight: 500;
+  box-shadow: 0rem 0.8rem 1.5rem rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #fbfbfb;
+  transition: transform 200ms ease-in-out, background 250ms ease-in-out, color 250ms ease-in-out;
+  position: relative;
+  z-index: 2;
+}
+
+.recent-btn:hover {
+  transform: scale(0.94);
+}
+
+.recent-btn.dark {
+  background-color: #2b3945;
+  color: #fafafa;
+}

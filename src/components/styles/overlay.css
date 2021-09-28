@@ -1,0 +1,113 @@
+.overlay {
+  min-height: calc(100vh - 7rem);
+  position: relative;
+  transition: background 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.overlay.dark {
+  background-color: #202c37;
+  color: #fafafa;
+}
+
+.overlay button {
+  padding: 1rem 3rem;
+  font-size: inherit;
+  font-weight: 500;
+  box-shadow: 0rem 0.8rem 1.5rem rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #fbfbfb;
+  margin: 3rem 0 6rem 0;
+  transition: transform 200ms ease-in-out, background 250ms ease-in-out, color 250ms ease-in-out;
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 960px) {
+  .overlay button {
+    margin: 3rem 0;
+  }
+}
+
+.overlay button:hover {
+  transform: scale(0.94);
+}
+
+.overlay button.dark {
+  background-color: #2b3945;
+  color: #fafafa;
+}
+
+.overlay .cross {
+  margin-right: 0.5rem;
+}
+
+.country-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 960px) {
+  .country-wrapper {
+    position: static;
+    transform: translate(0, 0);
+  }
+}
+
+.country-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5rem;
+  align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+  .country-content {
+    display: block;
+  }
+}
+
+.full-flag {
+  max-width: 50rem;
+  max-height: 34rem;
+  width: 100%;
+  margin: 3.5rem 0;
+}
+
+.country-content h4 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.country-content .details {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 750px) {
+  .country-content .details {
+    display: block;
+  }
+}
+
+.country-content .details ul {
+  margin-bottom: 3rem;
+  flex: 1;
+  list-style-type: none;
+  line-height: 1.7;
+}
+
+.country-content .details ul:first-child {
+  margin-right: 2rem;
+}
+
+.country-content .details ul span {
+  font-weight: 500;
+}
+
+.overlay h2 {
+    padding: 5rem 0;
+}

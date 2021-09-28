@@ -1,0 +1,38 @@
+.header {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: #fbfbfb;
+  box-shadow: 0.6rem 0.7rem 1.3rem -1.1rem rgba(0, 0, 0, 0.25);
+  transition: background 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+/* Dark mode color */
+.header.dark {
+  background-color: #2b3945;
+  color: #fafafa;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.theme-toggler-container {
+  display: flex;
+  align-items: center;
+  width: 7rem;
+  cursor: pointer;
+}
+
+.theme-icon {
+  font-size: 2.2rem;
+  margin-right: 0.5rem;
+}
+
+.theme-feedback {
+  font-weight: 500;
+}
